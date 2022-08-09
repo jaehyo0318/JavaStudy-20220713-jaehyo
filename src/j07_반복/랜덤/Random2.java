@@ -44,7 +44,9 @@ public class Random2 {
 			
 			i++;
 		}
-		System.out.println("\n최종 최대값: " + max);
+		
+		System.out.println();
+		System.out.println("최종 최대값: " + max);
 	}
 	
 }

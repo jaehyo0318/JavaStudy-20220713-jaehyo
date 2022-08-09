@@ -15,6 +15,7 @@ public class FactoryMain {
 		lgFactorys[2] = new LGFactory(3);
 		
 		
+		
 		System.out.println("삼성 공장 가동");
 		for(int i = 0; i < samsungFactorys.length; i ++) {
 			samsungFactorys[i].start();

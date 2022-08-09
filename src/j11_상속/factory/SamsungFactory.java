@@ -3,7 +3,7 @@ package j11_상속.factory;
 public class SamsungFactory extends Factory {
 
 	public SamsungFactory(int factoryNumber) {
-		super(factoryNumber);
+		super(factoryNumber); // 부모클래스 생성자 상속
 	}
 	
 	@Override

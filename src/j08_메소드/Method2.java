@@ -37,7 +37,7 @@ public class Method2 {
 	//반환값이 없는 메소드에서 메소드를 강제로 탈출하는 방법
 	public static void test6(String names) {
 		while(true) {
-			int tokenIndex = names.indexOf(", ");
+			int tokenIndex = names.indexOf(",");
 			String name = tokenIndex != -1 ?names.substring(0, tokenIndex)
 					: names;
 			

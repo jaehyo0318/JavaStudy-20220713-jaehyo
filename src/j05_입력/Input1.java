@@ -1,6 +1,6 @@
 package j05_입력;
 
-import java.util.Scanner;
+import java.util.Scanner; // Ctl + Shift + o
 
 public class Input1 {
 

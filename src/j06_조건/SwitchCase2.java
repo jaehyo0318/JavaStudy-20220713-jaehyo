@@ -2,7 +2,7 @@ package j06_조건;
 
 public class SwitchCase2 {
 	public static void main(String[] args) {
-		int score = 85;
+		int score = 100;
 		boolean breakFlag = true;
 		
 		switch(score / 10) {

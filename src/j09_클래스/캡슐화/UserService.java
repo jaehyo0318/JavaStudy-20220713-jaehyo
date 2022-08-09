@@ -11,39 +11,42 @@ public class UserService {
 		scanner = new Scanner(System.in);
 	}
 	
-	public void addUser() {
+	public User addUser() {
 		
 		String username = null;
 		String password = null;
 		String name = null;
 		String email = null;
 		
-		System.out.println("아이디: ");
+		System.out.print("아이디: ");
 		username = scanner.nextLine();
 		if(isStrBlank(username)) {
-			return;
+			System.out.println("공백은 입력 불가합니다.");
 		}
 		
-		System.out.println("비밀번호: ");
+		System.out.print("비밀번호: ");
 		password = scanner.nextLine();
 		if(isStrBlank(password)) {
-			return;
+			System.out.println("공백은 입력 불가합니다.");
 		}
 		
-		System.out.println("이름: ");
+		System.out.print("이름: ");
 		name = scanner.nextLine();
 		if(isStrBlank(name)) {
-			return;
+			System.out.println("공백은 입력 불가합니다.");
 		}
 		
-		System.out.println("이메일: ");
+		System.out.print("이메일: ");
 		email = scanner.nextLine();
 		if(isStrBlank(email)) {
-			return;
+			System.out.println("공백은 입력 불가합니다.");
 		}
+		
+		return new User(username, password, name, email);
 	}
 	
 	private boolean isStrBlank(String str) {
 		return str == null || str.isBlank(); // => str.trim().isEmpty
+		//isBlank() => 공백 혹은 빈문자열이 있을경우 true반환
 	}
 }
